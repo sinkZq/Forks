@@ -22,7 +22,7 @@ local iscoreguipresent = false;
 local iscoregui = function(ins) -- to be used in the hooks
 	local res = select(2, pcall(GetDebugId, ins))
 
-	return type(res) == "string" and string.find(res, "CoreGui") and string.find(res, "The current")
+	return type(res) == "string" and string.find(res, "CoreGui") and string.find(res, "The current thread cannot access")
 end
 
 local compareinstances = function(a, b)
