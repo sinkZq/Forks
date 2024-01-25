@@ -148,7 +148,7 @@ local h1; h1 = hookmetamethod(game,"__namecall", function(...)
 			end
 		end
 
-		return h1(self, {unpack(randomizeTable(target)), unpack(tbl)}, fnc)
+		return h1(...)
 	end
 
 	return h1(...)
